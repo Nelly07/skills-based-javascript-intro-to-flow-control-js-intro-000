@@ -1,5 +1,5 @@
 function basicTeenager(age) {
-  if (age >= 13 || age <= 19) {
+  if (age >= 13 && age <= 19) {
     return "You are a teenager!"
   }
 }
@@ -37,9 +37,10 @@ else{
 }
 
 function switchAge(age) {
-  if (age>=13 && age<=17){
+  switch (age>=13 && age<=17){
+    case true:
     return "You are a teenager!";
-  } else {
+    default:
   return "You are an age";
   }
 }
